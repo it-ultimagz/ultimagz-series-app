@@ -23,7 +23,7 @@
 <header class="fixed top-0 left-0 w-full z-50 transition-all duration-100" bind:this={header}>
   <nav class="desktop mx-auto container flex justify-center md:justify-between py-5 items-center">
     <a href="/">
-      <h1 class="brand font-black text-3xl bg-gradient-to-r from-red-500 to-red-900 bg-clip-text text-transparent">
+      <h1 class="brand font-black text-3xl bg-gradient-to-br from-red-500 to-red-800 bg-clip-text text-transparent">
         ULTIMAGZ
       </h1>
     </a>
@@ -62,11 +62,13 @@
 </main>
 
 <footer class="bg-slate-800">
-  <div class="mx-auto container py-20 text-white flex justify-between items-center">
+  <div
+    class="mx-auto container pt-20 pb-36 md:py-20 text-white flex justify-between items-center flex-col md:flex-row text-center md:text-left"
+  >
     <div class="space-y-2">
       <a href="https://ultimagz.com">
         <h1
-          class="text-4xl font-black bg-gradient-to-r from-red-500 to-red-900 bg-clip-text hover:text-transparent transition-all duration-100"
+          class="text-4xl font-black bg-gradient-to-br from-red-500 to-red-800 bg-clip-text hover:text-transparent transition-all duration-100"
         >
           ULTIMAGZ
         </h1>

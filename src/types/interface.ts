@@ -45,8 +45,10 @@ export interface PostData {
 export interface SeriesPageDTO {
   currentSeries: SeriesDataWithTagId;
   currentSeriesPosts: PostData[];
+  error?: string;
 }
 
 export interface HomePageDTO {
   seriesData: SeriesDataWithTagId[];
+  error?: string;
 }
