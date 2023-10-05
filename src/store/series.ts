@@ -1,9 +1,9 @@
-import { writable } from "svelte/store";
-import type { SeriesDataWithTagId } from "../types/interface";
+import { writable } from 'svelte/store'
+import type { SeriesDataWithTagId } from '../types/interface'
 
 export interface Global {
-  name: string;
-  age: number;
+    name: string
+    age: number
 }
 
-export const seriesStore = writable<SeriesDataWithTagId[]>([]);
+export const seriesStore = writable<SeriesDataWithTagId[]>([])
