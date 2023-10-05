@@ -5,11 +5,11 @@ import { createSlug } from "../../../utils/helper.js";
 import { getSeriesData, attachTagsId, getPostsByTagId } from "../../../utils/service.js";
 import { error } from "@sveltejs/kit";
 
-export const load = async ({ params }) => {
-    const currSeriesPromise = new Promise(async (res, rej) => {
+export const load = async ({ params }): Promise<SeriesPageDTO> => {
+    const currSeriesPromise = new Promise(async (resolve, reject) => {
         const seriesArr = get(seriesStore);
         let tempData = [...seriesArr];
-        if (seriesArr.length == 0) {
+        if (seriesArr.length === 0) {
             try {
                 tempData = await _fetchSeriesData();
                 seriesStore.set(tempData);
@@ -19,9 +19,9 @@ export const load = async ({ params }) => {
         }
         const currSeries = tempData.find((series) => createSlug(series.title) === params.slug);
         if (currSeries) {
-            res(currSeries);
+            resolve(currSeries);
         }
-        rej("Series not found");
+        reject("Series not found");
     });
 
     try {
