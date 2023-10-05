@@ -1,5 +1,6 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
+	"include": ["vite.config.ts", ".eslintrc.cjs", "src", "build", "postcss.config.js"],
 	"compilerOptions": {
 		"allowJs": true,
 		"checkJs": true,
