@@ -1,12 +1,12 @@
 <script>
-    import { goto } from '$app/navigation'
-    import Button from '../components/Button.svelte'
+    import { goto } from "$app/navigation";
+    import Button from "../components/Button.svelte";
 
     const handleBackToHome = () => {
-        goto('/', {
+        goto("/", {
             replaceState: true,
-        })
-    }
+        });
+    };
 </script>
 
 <div
@@ -23,7 +23,7 @@
         </div>
     </div>
     <h3 class="text-xl">Oops... Halaman yang kamu cari tidak ditemukan.</h3>
-    <Button color="custom" class="w-max px-5 bg-slate-600 hover:bg-slate-700 text-white" on:click={handleBackToHome}
-        >Kembali ke halaman utama</Button
-    >
+    <Button color="custom" class="w-max px-5 bg-slate-600 hover:bg-slate-700 text-white" on:click={handleBackToHome}>
+        Kembali ke halaman utama
+    </Button>
 </div>
