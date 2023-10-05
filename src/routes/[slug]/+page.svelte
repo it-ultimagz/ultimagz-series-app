@@ -3,8 +3,11 @@
   import type { SeriesPageDTO } from "../../types/interface";
 
   export let data: SeriesPageDTO;
-  console.log(data);
 </script>
+
+<svelte:head>
+  <title>{data.currentSeries.title} | Artikel Series by ULTIMAGZ</title>
+</svelte:head>
 
 <div>
   <h1 class="font-bold text-4xl">{data.currentSeries.title}</h1>

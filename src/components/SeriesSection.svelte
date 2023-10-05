@@ -22,14 +22,14 @@
   fetchPosts(series.tag_id);
 </script>
 
-<section class="space-y-4">
-  <h1 class="font-bold text-3xl">
+<section class="space-y-8">
+  <h1 class="font-bold text-3xl leading-normal">
     {series.title}
     {#if series.is_new}
       <Label variant="success">NEW</Label>
     {/if}
   </h1>
-  <div class="mt-8 flex flex-wrap gap-8">
+  <div class="flex flex-wrap gap-8">
     {#if posts}
       {#each posts as post}
         <SeriesCard data={post} />
@@ -37,6 +37,12 @@
     {/if}
   </div>
   <div class="flex justify-end">
-    <Button type="link" href={`/${createSlug(series.title)}`} class="w-max px-10">Baca Lainnya</Button>
+    <Button
+      type="link"
+      href={`/${createSlug(series.title)}`}
+      color="custom"
+      class="w-full md:w-max px-10 bg-transparent text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white font-bold"
+      >Baca Lainnya</Button
+    >
   </div>
 </section>

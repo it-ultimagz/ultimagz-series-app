@@ -1,6 +1,6 @@
 <script lang="ts">
   type Type = "button" | "link";
-  type Color = "primary" | "danger" | "warning" | "success";
+  type Color = "primary" | "danger" | "warning" | "success" | "custom";
   type Variant = "solid" | "outline" | "ghost";
 
   export let type: Type = "button";
@@ -13,19 +13,20 @@
     danger: "bg-red-500 hover:bg-red-600 disabled:bg-red-400",
     warning: "bg-yellow-500 hover:bg-yellow-600 disabled:bg-yellow-400",
     success: "bg-green-500 hover:bg-green-600 disabled:bg-green-400",
+    custom: "",
   };
 
   const variants = {
-    solid: "text-white",
-    outline: "text-blue-500 border border-blue-500",
-    ghost: "text-blue-500",
+    solid: "",
+    outline: "",
+    ghost: "",
   };
 </script>
 
 {#if type === "link"}
   <a
     href={props.href || "/"}
-    class={`rounded p-3 w-full transition duration-100 text-center ${colors[color]} ${variants[variant]} ${classProps}`}
+    class={`rounded-lg p-3 w-full transition duration-100 text-center ${colors[color]} ${variants[variant]} ${classProps}`}
     {...props}
   >
     <slot />
@@ -37,7 +38,7 @@
     on:mouseover
     on:mouseenter
     on:mouseleave
-    class={`rounded p-3 w-full transition duration-100 ${colors[color]} ${variants[variant]} ${classProps}`}
+    class={`rounded-lg p-3 w-full transition duration-100 ${colors[color]} ${variants[variant]} ${classProps}`}
     {...props}
   >
     <slot />

@@ -1,20 +1,15 @@
 <script lang="ts">
   import type { PostData } from "../types/interface";
   import { parseStringToHTML } from "../utils/helper";
-  import Button from "./Button.svelte";
 
   export let data: PostData;
-
-  const handleOnClick = () => {
-    window.location.href = data.link;
-  };
 </script>
 
 <a
   href={data.link}
   class="card flex flex-col w-full md:w-[45%] lg:w-[20%] rounded-xl overflow-hidden shadow-lg grow transition-all duration-200 hover:bg-red-500 hover:text-white"
 >
-  <div class="card-header w-full pt-[75%] relative">
+  <div class="card-header w-full pt-[75%] relative overflow-hidden">
     <img
       loading="lazy"
       class="absolute object-cover top-0 left-0 h-full"

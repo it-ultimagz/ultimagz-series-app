@@ -17,7 +17,7 @@ export const load = async ({ params }) => {
         console.log(err);
       }
     }
-    const currSeries = tempData.find((series) => createSlug(series.title) === params.seriesSlug);
+    const currSeries = tempData.find((series) => createSlug(series.title) === params.slug);
     if (currSeries) {
       res(currSeries);
     }

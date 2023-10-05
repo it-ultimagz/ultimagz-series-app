@@ -1,8 +1,3 @@
-// if you want to generate a static html file
-// for your page.
-// Documentation: https://kit.svelte.dev/docs/page-options#prerender
-export const prerender = true;
-
 // if you want to Generate a SPA
 // you have to set ssr to false.
 // This is not the case (so set as true or comment the line)

@@ -1,36 +1,28 @@
 <script lang="ts">
   import { attachTagsId, getSeriesData } from "../utils/service";
-  import type { SeriesDataWithTagId } from "../types/interface";
+  import type { HomePageDTO, SeriesDataWithTagId } from "../types/interface";
   import SeriesSection from "../components/SeriesSection.svelte";
   import { seriesStore } from "../store/series";
+  import Typewriter from "svelte-typewriter";
 
-  let seriesData: SeriesDataWithTagId[];
-
-  const fetchData = async () => {
-    try {
-      const res = await getSeriesData();
-      seriesData = await attachTagsId(res.data);
-      seriesStore.set(seriesData);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  fetchData();
+  export let data: HomePageDTO;
 </script>
 
+<svelte:head>
+  <title>Artikel Series by ULTIMAGZ</title>
+</svelte:head>
+
 <div class="space-y-8">
-  <div class="flex items-center justify-center px-[20%] py-20 text-center">
-    <h1 class="font-bold text-9xl">ARTIKEL SERIES</h1>
+  <div class="relative pt-[40%]">
+    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center px-[20%] text-center">
+      <Typewriter interval={200} mode="loopRandom" cursor={false}>
+        <h1 class="font-bold text-5xl md:text-8xl xl:text-9xl text-red-600">ARTIKEL SERIES</h1>
+      </Typewriter>
+    </div>
   </div>
   <div class="flex flex-col gap-6">
-    {#if seriesData}
-      {#each seriesData as series}
-        <SeriesSection {series} />
-      {/each}
-    {/if}
+    {#each data.seriesData as series}
+      <SeriesSection {series} />
+    {/each}
   </div>
 </div>
-
-<style>
-</style>

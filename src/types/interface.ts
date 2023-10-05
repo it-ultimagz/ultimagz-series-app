@@ -46,3 +46,7 @@ export interface SeriesPageDTO {
   currentSeries: SeriesDataWithTagId;
   currentSeriesPosts: PostData[];
 }
+
+export interface HomePageDTO {
+  seriesData: SeriesDataWithTagId[];
+}
