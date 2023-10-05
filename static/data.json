@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "title": "Sustainable Development Goals",
+      "tag": "sdg",
+      "is_new": true
+    },
+    {
+      "title": "Evaluasi Himpunan",
+      "tag": "evaluasi-himpunan",
+      "is_new": false
+    },
+    {
+      "title": "Hari Pangan",
+      "tag": "artikelseriespangan",
+      "is_new": false
+    }
+  ]
+}
