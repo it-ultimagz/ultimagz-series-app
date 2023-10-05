@@ -1,10 +1,6 @@
 import axios from "axios";
 import type { PostData, SeriesData, SeriesDataWithTagId, TagData } from "../types/interface";
 
-axios.defaults.headers.common["Access-Control-Allow-Origin"] = process.env.ALLOW_ORIGIN;
-axios.defaults.headers.common["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS";
-axios.defaults.headers.common["Access-Control-Allow-Headers"] = "Content-Type";
-
 const API_URL = "https://ultimagz.com/wp-json/wp/v2";
 
 export const getSeriesData = async () => {
