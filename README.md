@@ -1,38 +1,37 @@
-# create-svelte
+# Artikel Series by ULTIMAGZ
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is defined as web application to collect articles with same topic or special series from [ULTIMAGZ](https://ultimagz.com). This project is built with Svelte and TailwindCSS.
 
-## Creating a project
+> Only `localhost:8080` is allowed to access the **ULTIMAGZ WP API**. So keep in mind to use localhost:8080 while developing this project.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- ✅ Fetching series from static JSON file
+- ✅ Fetching related articles from ULTIMAGZ WP API
+- ✅ Responsive design
+- ✅ Error handling
+- 👟 Standarized code style with ESLint
+- ❌ Dark mode
+- ❌ Google Analytics
+- ❌ Dynamic series fetching from database (preferably Airtable)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Project setup
 
-## Developing
+1. Clone this repository
+2. Install dependencies
+    ```bash
+    npm install
+    ```
+3. Run the project
+    ```bash
+    npm run dev
+    ```
+4. Open your browser and go to `localhost:5000`
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Production Notes
 
-```bash
-npm run dev
+- This project is deployed to Vercel. So, you can access the settings in [Vercel Dashboard](https://vercel.com/dashboard).
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Acknowledgements
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Please dont ruin this project. This project is built with love by [ULTIMAGZ 2023](https://ultimagz.com) team.
