@@ -1,10 +1,7 @@
 module.exports = {
-    singleQuote: true,
+    singleQuote: false,
     trailingComma: 'all',
-    arrowParens: 'always',
     printWidth: 120,
     tabWidth: 4,
-    semi: false,
     endOfLine: 'lf',
-    plugins: ['prettier-plugin-svelte'],
 }
