@@ -5,11 +5,11 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "2rem",
         sm: "2rem",
-        lg: "5rem",
-        xl: "10rem",
-        "2xl": "12rem",
+        md: "5rem",
+        xl: "8rem",
+        "2xl": "10rem",
       },
     },
     extend: {
