@@ -1,14 +1,20 @@
 <script lang="ts">
+  import "./SeriesCardDetail.scss";
   import type { PostData } from "../types/interface";
   import { parseStringToHTML } from "../utils/helper";
-  import Button from "./Button.svelte";
 
+  export let showDetail = true;
   export let data: PostData;
+
   const postTitle = parseStringToHTML(data.title.rendered);
 </script>
 
-<div class="flex flex-col w-[calc(50%-20px)] gap-2 rounded-xl shadow-xl overflow-hidden">
-  <div class="pt-[56.25%] relative">
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<a
+  href={data.link}
+  class={`card flex flex-col w-full md:w-[calc(50%-20px)] gap-2 rounded-xl shadow-xl overflow-hidden transition-all duration-1000`}
+>
+  <div class="img-wrapper pt-[56.25%] relative overflow-hidden">
     <img
       loading="lazy"
       class="absolute top-0 left-0 object-cover h-full w-full"
@@ -16,8 +22,10 @@
       alt={`image of ${postTitle}`}
     />
   </div>
-  <div class="px-6 pt-4 pb-6">
-    <h3 class="font-bold text-2xl">{postTitle}</h3>
-    <p class="line-clamp-5">{parseStringToHTML(data.excerpt.rendered.replace(/\[&hellip;\]/g, ""))}</p>
+  <div class="post px-6 pt-4 pb-6 space-y-2">
+    <h3 class="post-title font-bold text-2xl">{postTitle}</h3>
+    {#if showDetail}
+      <p class="post-desc line-clamp-5">{parseStringToHTML(data.excerpt.rendered.replace(/\[&hellip;\]/g, ""))}</p>
+    {/if}
   </div>
-</div>
+</a>

@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        mona: ["Mona Sans", "sans"],
       },
     },
   },

@@ -14,6 +14,26 @@
       "title": "Hari Pangan",
       "tag": "artikelseriespangan",
       "is_new": false
+    },
+    {
+      "title": "Orientasi Mahasiswa Baru 2020",
+      "tag": "artikelseriesomb2020",
+      "is_new": false
+    },
+    {
+      "title": "Kesehatan",
+      "tag": "artikelserieskesehatan",
+      "is_new": false
+    },
+    {
+      "title": "Edukasi Seks",
+      "tag": "artikelseriesedukasiseks",
+      "is_new": false
+    },
+    {
+      "title": "Kesehatan Mental",
+      "tag": "artikelserieskesehatanmental",
+      "is_new": false
     }
   ]
 }
