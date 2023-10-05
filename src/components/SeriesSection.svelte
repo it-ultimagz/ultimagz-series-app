@@ -39,7 +39,7 @@
   <div class="flex justify-end">
     <Button
       type="link"
-      href={`/${createSlug(series.title)}`}
+      href={`/series/${createSlug(series.title)}`}
       color="custom"
       class="w-full md:w-max px-10 bg-transparent text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white font-bold"
       >Baca Lainnya</Button

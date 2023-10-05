@@ -12,7 +12,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <a
   href={data.link}
-  class={`card flex flex-col w-full md:w-[calc(50%-20px)] gap-2 rounded-xl shadow-xl overflow-hidden transition-all duration-1000`}
+  class={`card flex flex-col w-full md:w-[calc(50%-20px)] gap-2 rounded-xl shadow-md overflow-hidden transition-all duration-1000`}
 >
   <div class="img-wrapper pt-[56.25%] relative overflow-hidden">
     <img
