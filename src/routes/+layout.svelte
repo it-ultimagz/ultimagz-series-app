@@ -1,24 +1,45 @@
 <script lang="ts">
-    import '../app.scss'
-    import Fa from 'svelte-fa'
-    import { faBars, faBook, faBookmark, faEarthAmericas, faGlobe } from '@fortawesome/free-solid-svg-icons'
-    import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+    import "../app.scss";
+    import Fa from "svelte-fa";
+    import { faBars, faBook, faBookmark, faEarthAmericas, faGlobe } from "@fortawesome/free-solid-svg-icons";
+    import { faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
-    let header: HTMLElement
-    let isListenerAdded = false
+    let header: HTMLElement;
+    let isListenerAdded = false;
 
     $: if (!isListenerAdded) {
-        document.addEventListener('scroll', () => {
-            const classList = ['bg-white', 'shadow-md', 'border-b-2', 'border-red-600']
+        document.addEventListener("scroll", () => {
+            const classList = ["bg-white", "shadow-md", "border-b-2", "border-red-600"];
             if (window.scrollY > 0 && header) {
-                header.classList.add(...classList)
+                header.classList.add(...classList);
             } else if (header) {
-                header.classList.remove(...classList)
+                header.classList.remove(...classList);
             }
-        })
-        isListenerAdded = true
+        });
+        isListenerAdded = true;
     }
 </script>
+
+<svelte:head>
+    <meta name="description" content="Lets read the series of special article from ULTIMAGZ" />
+    <meta
+        name="keywords"
+        content="ultimagz, series, artikel, artikel series, ultimagz series, ultimagz artikel series"
+    />
+    <meta name="og:title" content="Artikel Series by ULTIMAGZ" />
+    <meta name="og:description" content="Lets read the series of special article from ULTIMAGZ" />
+    <meta name="og:image" content="https://ultimagz.com/wp-content/uploads/cropped-favico-180x180.jpg" />
+    <meta name="og:url" content="https://series.ultimagz.com" />
+    <meta name="og:site_name" content="Artikel Series by ULTIMAGZ" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artikel Series by ULTIMAGZ" />
+    <meta name="twitter:description" content="Lets read the series of special article from ULTIMAGZ" />
+    <meta name="twitter:image" content="https://series.ultimagz.com/ultimagz-series-og.png" />
+    <meta name="twitter:url" content="https://ultimagz.com/series" />
+    <meta name="twitter:site" content="@ultimagz" />
+    <meta name="twitter:creator" content="@ultimagz" />
+</svelte:head>
 
 <header class="fixed top-0 left-0 w-full z-50 transition-all duration-100" bind:this={header}>
     <nav class="desktop mx-auto container flex justify-center md:justify-between py-5 items-center">
