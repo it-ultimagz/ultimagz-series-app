@@ -1,4 +1,5 @@
 <script lang="ts">
+<<<<<<< HEAD
     import { attachTagsId, getSeriesData } from '../utils/service'
     import type { HomePageDTO, SeriesDataWithTagId } from '../types/interface'
     import SeriesSection from '../components/SeriesSection.svelte'
@@ -6,6 +7,15 @@
     import Typewriter from 'svelte-typewriter'
 
     export let data: HomePageDTO
+=======
+    import { attachTagsId, getSeriesData } from "../utils/service";
+    import type { HomePageDTO, SeriesDataWithTagId } from "../types/interface";
+    import SeriesSection from "../components/SeriesSection.svelte";
+    import { seriesStore } from "../store/series";
+    import Typewriter from "svelte-typewriter";
+
+    export let data: HomePageDTO;
+>>>>>>> 6d3c0aec8638d8dd2b32c6b7fb9410d99b785a96
 </script>
 
 <svelte:head>
