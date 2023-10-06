@@ -26,7 +26,7 @@ This project is defined as web application to collect articles with same topic o
     ```bash
     npm run dev
     ```
-4. Open your browser and go to `localhost:5000`
+4. Open your browser and go to `localhost:8080`
 
 ## Working Environment
 
