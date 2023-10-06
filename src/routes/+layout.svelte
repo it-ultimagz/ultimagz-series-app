@@ -1,24 +1,4 @@
 <script lang="ts">
-<<<<<<< HEAD
-    import '../app.scss'
-    import Fa from 'svelte-fa'
-    import { faBars, faBook, faBookmark, faEarthAmericas, faGlobe } from '@fortawesome/free-solid-svg-icons'
-    import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-
-    let header: HTMLElement
-    let isListenerAdded = false
-
-    $: if (!isListenerAdded) {
-        document.addEventListener('scroll', () => {
-            const classList = ['bg-white', 'shadow-md', 'border-b-2', 'border-red-600']
-            if (window.scrollY > 0 && header) {
-                header.classList.add(...classList)
-            } else if (header) {
-                header.classList.remove(...classList)
-            }
-        })
-        isListenerAdded = true
-=======
     import "../app.scss";
     import Fa from "svelte-fa";
     import { faBars, faBook, faBookmark, faEarthAmericas, faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +17,6 @@
             }
         });
         isListenerAdded = true;
->>>>>>> 6d3c0aec8638d8dd2b32c6b7fb9410d99b785a96
     }
 </script>
 
