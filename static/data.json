@@ -1,6 +1,12 @@
 {
   "data": [
     {
+      "title": "Disabilitas",
+      "tag": "#SeriesDisabilitas2023",
+      "is_new": true
+
+    },
+    {
       "title": "Sustainable Development Goals",
       "tag": "sdg",
       "is_new": false
