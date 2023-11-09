@@ -26,6 +26,6 @@ export const attachTagsId = async (seriesData: SeriesData[]) => {
 
 export const getPostsByTagId = async (id: number, amount: number = 10) => {
     if (amount > 50) throw new Error("Maximum amount is 50");
-    const res = await axios.get(`${API_URL}/posts?tags=${id}&per_page=${amount}`);
+    const res = await axios.get(`${API_URL}/posts?tags=${id}&per_page=${amount}&orderby=post_modified&order=asc`);
     return res.data as PostData[];
 };
