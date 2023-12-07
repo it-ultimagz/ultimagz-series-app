@@ -1,44 +1,58 @@
 {
   "data": [
     {
-      "title": "Disability",
-      "tag": "seriesdisabilitas2023",
-      "is_new": true
+      "title": "Sosok UMN",
+      "tag": "artikelseriessosokumn",
+      "is_new": true,
+      "introduction" : "Ada berbagai cerita unik dan menarik dari kehidupan orang-orang. Setiap cerita itu khas dan tidak tergantikan. Series ini pun memperkenalkan sejumlah sosok di UMN yang punya ragam kisah inspiratif untuk hari-hari Ultimates."
+    },
+    {
+      "title": "Disabilitas",
+      "tag": "artikelseriesdisabilitas2023",
+      "is_new": false,
+      "introduction" :"Disabilitas adalah risiko yang menyertai seumur hidup manusia. Siapa pun bisa menjadi disabilitas dan terbatas. Series ini ingin membawa Ultimates melihat bahwa tidak ada yang aneh dari macam-macam disabilitas."
     },
     {
       "title": "Sustainable Development Goals",
       "tag": "sdg",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Evaluasi Himpunan",
       "tag": "evaluasi-himpunan",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Hari Pangan",
       "tag": "artikelseriespangan",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Orientasi Mahasiswa Baru 2020",
       "tag": "artikelseriesomb2020",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Kesehatan",
       "tag": "artikelserieskesehatan",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Edukasi Seks",
       "tag": "artikelseriesedukasiseks",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     },
     {
       "title": "Kesehatan Mental",
       "tag": "artikelserieskesehatanmental",
-      "is_new": false
+      "is_new": false,
+      "introduction" :""
     }
   ]
 }

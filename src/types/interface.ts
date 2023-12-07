@@ -2,6 +2,7 @@ export interface SeriesData {
     title: string;
     tag: string;
     is_new: boolean;
+    introduction:string;
 }
 
 export interface SeriesDataWithTagId extends SeriesData {

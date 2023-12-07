@@ -18,7 +18,7 @@
             console.log(error)
         }
     }
-
+    console.log(series)
     fetchPosts(series.tag_id)
 </script>
 
@@ -35,6 +35,11 @@
                 <SeriesCard data={post} />
             {/each}
         {/if}
+    </div>
+    <div>
+        <p class="text-2xl leading-normal">
+            {series.introduction}
+        </p>
     </div>
     <div class="flex justify-end">
         <Button
