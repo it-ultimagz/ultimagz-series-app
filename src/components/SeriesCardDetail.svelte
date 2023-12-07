@@ -7,6 +7,7 @@
     export let data: PostData
 
     const postTitle = parseStringToHTML(data.title.rendered)
+    console.log(postTitle)
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -30,4 +31,5 @@
             </p>
         {/if}
     </div>
+    
 </a>
