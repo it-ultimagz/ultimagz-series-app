@@ -1,9 +1,15 @@
 {
-  "data": [
+  "data": [  
+    {
+      "title":"Alam",
+      "tag":"artikelseriesalam",
+      "is_new":true,
+      "introduction":"Alam adalah tempat tinggal kita. Alam adalah rumah kita. Alam adalah tempat kita hidup. Series ini ingin mengajak Ultimates untuk lebih mengenal alam dan menjaga alam."
+    },
     {
       "title": "Sosok UMN",
       "tag": "artikelseriessosokumn",
-      "is_new": true,
+      "is_new": false,
       "introduction" : "Ada berbagai cerita unik dan menarik dari kehidupan orang-orang. Setiap cerita itu khas dan tidak tergantikan. Series ini pun memperkenalkan sejumlah sosok di UMN yang punya ragam kisah inspiratif untuk hari-hari Ultimates."
     },
     {
