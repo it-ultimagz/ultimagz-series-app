@@ -1,9 +1,15 @@
 {
-  "data": [  
+  "data": [
+    {
+      "title":"Suara Mahasiswa",
+      "tag":"artikelseriesumn2024",
+      "is_new":true,
+      "introduction":""
+    },
     {
       "title":"Alam",
       "tag":"artikelseriesalam",
-      "is_new":true,
+      "is_new":false,
       "introduction":"Alam adalah tempat tinggal kita. Alam adalah rumah kita. Alam adalah tempat kita hidup. Series ini ingin mengajak Ultimates untuk lebih mengenal alam dan menjaga alam."
     },
     {
