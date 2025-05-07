@@ -2,6 +2,12 @@
   "data": [  
     {
       "title":"Suara Mahasiswa",
+      "tag":"artikelserieshoror",
+      "is_new":true,
+      "introduction":""
+    },
+    {
+      "title":"Suara Mahasiswa",
       "tag":"artikelseriesumn2024",
       "is_new":true,
       "introduction":""
