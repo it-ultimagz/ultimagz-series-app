@@ -12,9 +12,9 @@
         "lint:fix": "prettier --write \"**/*.{js,ts,svelte}\" && eslint --ext .js,.ts . --fix"
     },
     "devDependencies": {
-        "@sveltejs/adapter-auto": "^2.0.0",
+        "@sveltejs/adapter-auto": "^2.1.1",
         "@sveltejs/adapter-static": "^2.0.3",
-        "@sveltejs/kit": "^1.20.4",
+        "@sveltejs/kit": "^1.30.4",
         "@typescript-eslint/eslint-plugin": "^6.7.4",
         "eslint": "^8.50.0",
         "eslint-config-standard-with-typescript": "^39.1.0",
@@ -29,7 +29,7 @@
         "svelte-typewriter": "^3.1.6",
         "tslib": "^2.4.1",
         "typescript": "^5.2.2",
-        "vite": "^4.4.2"
+        "vite": "^4.5.3"
     },
     "type": "module",
     "dependencies": {
