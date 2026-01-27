@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "https://ultimagz-series-h1eegy6y4-ultimagzs-projects.vercel.app/$1"
-        }
-    ]
-}
