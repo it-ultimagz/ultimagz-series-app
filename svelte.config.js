@@ -14,7 +14,8 @@ const config = {
         // Force to use node version 20, izhin
         adapter: adapter({
             runtime: 'nodejs20.x'
-    },
+        })
+    }
 };
 
 export default config;
