@@ -12,7 +12,7 @@
         "lint:fix": "prettier --write \"**/*.{js,ts,svelte}\" && eslint --ext .js,.ts . --fix"
     },
     "devDependencies": {
-        "@sveltejs/adapter-auto": "^2.1.1",
+        "@sveltejs/adapter-vercel": "^3.1.0",
         "@sveltejs/adapter-static": "^2.0.3",
         "@sveltejs/kit": "^1.30.4",
         "@typescript-eslint/eslint-plugin": "^6.7.4",
