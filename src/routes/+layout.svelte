@@ -51,7 +51,7 @@
             </h1>
         </a>
         <ul class="hidden md:flex list-none gap-4">
-            <li><a href="https://ultimagz.com" target="_blank">MAGZ</a></li>
+            <li><a href="https://ultimagz.com" target="_blank">ULTIMAGZ</a></li>
             <li><a href="https://fokus.ultimagz.com" target="_blank">FOKUS</a></li>
             <li><a href="https://pdf.ultimagz.com" target="_blank">PDF</a></li>
         </ul>

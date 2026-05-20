@@ -12,10 +12,10 @@ export const attachTagsId = async (seriesData: SeriesData[]) => {
     const seriesTagParam = seriesData.map((series) => series.tag).join(",");
 
     // get tags data from API
-    const res = await axios.get(`${API_URL}/tags?slug=${seriesTagParam}`);
+    const res = await axios.get(`${API_URL}/tags?slug=${seriesTagParam}&per_page=100`);
     const tagsData: TagData[] = res.data;
     const newSeriesData = seriesData.map((series) => {
-        const tag = tagsData.find((tag) => tag.slug === series.tag);
+        const tag = tagsData.find((tag) => tag.slug === series.tag.toLowerCase());
         return {
             ...series,
             tag_id: tag?.id,

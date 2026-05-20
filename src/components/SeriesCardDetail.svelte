@@ -15,11 +15,11 @@
     href={data.link}
     class={`card flex flex-col w-full md:w-[calc(50%-20px)] gap-2 rounded-xl shadow-md overflow-hidden transition-all duration-1000`}
 >
-    <div class="img-wrapper pt-[56.25%] relative overflow-hidden">
+    <div class="img-wrapper pt-[56.25%] relative overflow-hidden bg-slate-200">
         <img
             loading="lazy"
             class="absolute top-0 left-0 object-cover h-full w-full"
-            src={data.better_featured_image.source_url}
+            src={data.better_featured_image?.source_url || '/ultimagz-series-og.png'}
             alt={`image of ${postTitle}`}
         />
     </div>

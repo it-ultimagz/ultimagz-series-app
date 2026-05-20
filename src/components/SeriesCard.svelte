@@ -12,8 +12,8 @@
     <div class="card-header w-full pt-[75%] relative overflow-hidden">
         <img
             loading="lazy"
-            class="absolute object-cover top-0 left-0 h-full w-full"
-            src={data.better_featured_image.source_url}
+            class="absolute object-cover top-0 left-0 h-full w-full bg-slate-200"
+            src={data.better_featured_image?.source_url || '/ultimagz-series-og.png'}
             alt={`gambar ${data.title}`}
         />
     </div>
