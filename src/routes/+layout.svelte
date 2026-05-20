@@ -61,7 +61,7 @@
             <li>
                 <a href="https://ultimagz.com" target="_blank">
                     <Fa icon={faEarthAmericas} class="text-red-600 text-xl" />
-                    <span class="text-xs">MAGZ</span>
+                    <span class="text-xs">ULTIMAGZ</span>
                 </a>
             </li>
             <li>
